@@ -1,0 +1,110 @@
+/* Navigation Bar */
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+/* Navigation Links */
+nav a {
+    text-decoration:wavy;
+    color: rgb(201, 91, 12);
+    padding: 0.5em;
+    
+    border: radius 0.2em;;
+}
+
+/* Navigation Link Hover */
+nav a:hover {
+    background-color: rgb(236, 224, 224);
+}
+
+/* Media Query for Responsive Navigation Bar */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 0.5em 0;
+    }
+}
+p{
+    background-color: antiquewhite;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* margin-left: 0px; */
+    background-color: aquamarine;
+    margin-top: 120px;
+    margin: 2px;;
+    font-size:25px;
+    padding-left:40px;
+    float:left;
+    word-spacing:30px;
+  }
+  
+  a.menu:hover {
+    background-color:yellow;
+    font-size:20px;
+
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer a {
+        margin: 0.5em ;
+    }
+}
+
+  }
+
+
+  table{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+  }
+  
+  th {
+      text-align: left;
+  }
+  
+  td, th {
+      padding: 0.75rem;
+  }
+
+@media screen and (max-width: 600px){
+
+    table {
+        display: block;
+        width: 100%;
+  }
+    
+  td, th {
+     display: flex;
+     flex-direction: column;
+     padding: 2px;
+  }
+    
+  th{
+     font-size: 0.8em;
+     padding: 0.4em;
+   }
+    
+  td{
+    margin-bottom: 0.8em;
+   }
+    
+  td::before{
+    content: attr(data-label);
+    font-weight: bold;
+   }
+
+}  
