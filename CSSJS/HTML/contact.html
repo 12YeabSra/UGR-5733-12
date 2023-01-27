@@ -8,16 +8,36 @@
   background-repeat: no-repeat, repeat;
         }
     </style>
+    <script> 
+ 
+  var form = document.getElementById("form");
+
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  
+  console.log("Name: " + name);
+  console.log("Email: " + email);
+  console.log("Message: " + message);
+});
+
+    
+    
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../src/css/educational.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap/js/bootstrap.bundle.min.js">
 </head>
 <body class="container-xxl">
-    <br>
     <nav class="nav">
         <li class="nav-item">
             <a class="nav-link" href="../../home.html">home</a>
@@ -46,40 +66,31 @@
 
         </li>
     </nav>
-    <br>
-    <table class="first container p-5 my-5 bg-light text-blue">
-        
-        <tr>
-            <td width="30%">
-                <img src="../src/img/edu1.jpg" alt="" width="90%">
-                
-            </td>
-            <td width="70%" class="bg-light card">
-                <p class="bg-light card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A similique odio quo amet voluptates reiciendis facere repudiandae magnam, corrupti dolores accusantium tempore harum perspiciatis esse quis quos. Ipsam, odit doloremque?</p>
-            </td>
-        </tr>
-        <tr>
-            <td width="30%">
-                <img src="../src/img/edu2.jpeg" alt="" width="90%">
+    <h2>Contact Me</h2>
+     
+<form>
+    <div class="mb-3 mt-3">
+    <textarea name="" id=""+ cols="70" rows="2"  placeholder="Name"></textarea><br>
+    </div>
+    <div class="mb-3 mt-3">
+        <textarea type="email" name="" id="" cols="70" rows="2" placeholder="email"></textarea><br>
 
-            </td>
-            <td width="70%" class="bg-light card">
-                <p class="bg-light card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A similique odio quo amet voluptates reiciendis facere repudiandae magnam, corrupti dolores accusantium tempore harum perspiciatis esse quis quos. Ipsam, odit doloremque?</p>
+    </div>
+    <div class="mb-3 mt-3">
+        <textarea name="" id="" cols="70" rows="2" placeholder="company"></textarea><br>
 
-            </td>
+    </div>
+    <div class="mb-3 mt-3">
+        <textarea name="" id="" cols="70" rows="2" placeholder="phone"></textarea><br>
 
-        </tr>
-        <tr>
-            <td width="30%">
-                <img src="../src/img/edu3.jpg" alt="" width="90%">
+    </div>
+    <div class="mb-3 mt-3">
+        <textarea name="" id="" cols="70" rows="14" placeholder="your description" a></textarea><br>
 
-            </td>
-            <td width="70%" class="bg-light card">
-                <p class="bg-light card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A similique odio quo amet voluptates reiciendis facere repudiandae magnam, corrupti dolores accusantium tempore harum perspiciatis esse quis quos. Ipsam, odit doloremque?</p>
-            </td>
-        </tr>
-    </table>
-    <br>
+    </div>
+    <button type="button" class="btn btn-primary">submit</button>
+</form>
+
     <footer>
         <a href=""><img src="../src/img/facebook.png" alt="" width="5%"></a>
         <a href=""><img src="../src/img/instagram.png" alt="" width="5%"></a>
